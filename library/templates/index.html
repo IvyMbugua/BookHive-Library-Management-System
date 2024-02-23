@@ -1,0 +1,31 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %} Library Management System {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+  <div class="p-4 bg-light">
+    <div class="b-example-divider"></div>
+
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Welcome to BookHive</h1>
+          <p class="lead">BookHive is your go-to library management system, simplifying the way you organize and  access your collection of books. BookHive lets you effortlessly manage your library and track borrowed books. Say goodbye to the hassle of manual record-keeping.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <a href="/student_registration/" class="btn btn-primary btn-lg">Register as Student</a>
+              <a href="/student_login/" class="btn btn-outline-secondary btn-lg">Student Login</a>
+            </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="{% static 'banner.jpg' %}" alt="" width="720">
+        </div>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+    <br>
+  </div>
+  </div>
+  </div>
+{% endblock %}
